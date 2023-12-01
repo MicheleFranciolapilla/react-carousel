@@ -1,0 +1,210 @@
+[
+    {
+        "nr": 1,
+        "title": "l'alba dei morti viventi",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["angelo stano"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 5,
+        "title": "gli uccisori",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["luca dell'uomo"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 6,
+        "title": "la bellezza del demonio",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["gustavo trigo"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 7,
+        "title": "la zona del crepuscolo",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giuseppe montanari", "ernesto grassani"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 10,
+        "title": "attraverso lo specchio",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giampiero casertano"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 16,
+        "title": "il castello della paura",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giuseppe montanari", "ernesto grassani"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 17,
+        "title": "la dama in nero",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giuseppe montanari", "ernesto grassani"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 25,
+        "title": "morgana",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["angelo stano"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 26,
+        "title": "dopo mezzanotte",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giampiero casertano"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 34,
+        "title": "il buio",
+        "soggetto": "claudio chiaverotti",
+        "sceneggiatura": ["claudio chiaverotti"],
+        "disegni": ["piero dall'agnol"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 39,
+        "title": "il signore del silenzio",
+        "soggetto": "giuseppe ferrandino",
+        "sceneggiatura": ["giuseppe ferrandino"],
+        "disegni": ["giampiero casertano"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 40,
+        "title": "accadde domani",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giovanni freghieri"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": 43,
+        "title": "storia di nessuno",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["angelo stano"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 45,
+        "title": "goblin",
+        "soggetto": "claudio chiaverotti",
+        "sceneggiatura": ["claudio chiaverotti"],
+        "disegni": ["piero dall'agnol"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 57,
+        "title": "ritorno al crepuscolo",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giuseppe montanari", "ernesto grassani"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 66,
+        "title": "partita con la morte",
+        "soggetto": "claudio chiaverotti",
+        "sceneggiatura": ["claudio chiaverotti"],
+        "disegni": ["corrado roi"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 74,
+        "title": "il lungo addio",
+        "soggetto": "mauro marcheselli",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["carlo ambrosini"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 81,
+        "title": "johnny freak",
+        "soggetto": "mauro marcheselli",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["andrea venturi"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 82,
+        "title": "lontano dalla luce",
+        "soggetto": "claudio chiaverotti",
+        "sceneggiatura": ["claudio chiaverotti"],
+        "disegni": ["piero dall'agnol"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 84,
+        "title": "zed",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["bruno brindisi"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": 100,
+        "title": "la storia di dylan dog",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["angelo stano"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": "SP-3",
+        "title": "orrore nero",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": [["tiziano sclavi", "luigi mignacco"],
+        "disegni": ["giovanni freghieri"],
+        "copertina": "claudio villa"
+    },
+    {
+        "nr": "SP-4",
+        "title": "mefistofele",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["corrado roi"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": "SP-5",
+        "title": "la casa degli uomini perduti",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["giampiero casertano"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": "SP-6",
+        "title": "sette anime dannate",
+        "soggetto": "tiziano sclavi",
+        "sceneggiatura": ["tiziano sclavi"],
+        "disegni": ["corrado roi"],
+        "copertina": "angelo stano"
+    },
+    {
+        "nr": "SP-8",
+        "title": "labirinti di paura",
+        "soggetto": "claudio chiaverotti",
+        "sceneggiatura": ["claudio chiaverotti"],
+        "disegni": ["corrado roi"],
+        "copertina": "angelo stano"
+    }
+]
