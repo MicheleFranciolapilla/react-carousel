@@ -1,4 +1,9 @@
 .header
 {
-    @apply fixed left-0 right-0 top-0 h-[10vh] border-2 border-blue-950 bg-gray-800 text-yellow-600 text-3xl flex items-center justify-between px-5;
+    @apply fixed left-0 right-0 top-0 h-[13vh] border-2 border-gray-400 bg-gray-800 flex items-center justify-between px-5;
+}
+
+.image
+{
+    @apply h-3/4;
 }

@@ -1,0 +1,14 @@
+.thumbContainer
+{
+    height: calc(90%);
+    aspect-ratio: 1;
+    border: 3px solid yellow;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.thumb
+{
+    height: 100%;
+    object-fit: cover;
+}
