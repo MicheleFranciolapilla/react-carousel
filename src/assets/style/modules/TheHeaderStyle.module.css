@@ -1,6 +1,6 @@
 .header
 {
-    @apply fixed left-0 right-0 top-0 h-[13vh] border-2 border-gray-400 bg-gray-600 flex items-center justify-between px-12;
+    @apply fixed left-0 right-0 top-0 h-[10vh] border-2 border-gray-400 bg-gray-600 flex items-center justify-between px-12;
 }
 
 .image

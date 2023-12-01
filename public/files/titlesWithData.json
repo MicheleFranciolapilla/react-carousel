@@ -171,7 +171,7 @@
         "nr": "SP-3",
         "title": "orrore nero",
         "soggetto": "tiziano sclavi",
-        "sceneggiatura": [["tiziano sclavi", "luigi mignacco"],
+        "sceneggiatura": ["tiziano sclavi", "luigi mignacco"],
         "disegni": ["giovanni freghieri"],
         "copertina": "claudio villa"
     },
