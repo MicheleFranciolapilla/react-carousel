@@ -1,0 +1,4 @@
+.header
+{
+    @apply fixed left-0 right-0 top-0 h-[10vh] border-2 border-blue-950 bg-gray-800 text-yellow-600 text-3xl flex items-center justify-between px-5;
+}

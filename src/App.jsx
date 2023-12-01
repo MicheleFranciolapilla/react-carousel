@@ -1,6 +1,12 @@
+import TheHeader from "./components/TheHeader";
+
 function App() 
 {
- return <h1>hello world</h1>
+  return(
+    <>
+      <TheHeader pageTitle="DYLAN DOG Carousel" />
+    </>
+  );
 }
 
 export default App
