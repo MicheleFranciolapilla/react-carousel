@@ -1,10 +1,12 @@
 import TheHeader from "./components/TheHeader";
+import TheFooter from "./components/TheFooter";
 
 function App() 
 {
   return(
     <>
-      <TheHeader pageTitle="DYLAN DOG Carousel" />
+      <TheHeader />
+      <TheFooter />
     </>
   );
 }
