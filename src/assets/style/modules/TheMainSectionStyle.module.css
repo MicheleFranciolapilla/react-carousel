@@ -1,0 +1,5 @@
+.main
+{
+    margin: 0 auto;
+    @apply w-[96%] h-[80%] border-4 border-yellow-500 relative top-[12vh]
+}
