@@ -1,15 +1,20 @@
 .main
 {
     margin: 0 auto;
-    @apply w-[96%] border-4 border-yellow-500 relative top-[12vh] flex items-center justify-between
+    @apply w-full border-4 border-yellow-500 relative top-[12vh] flex items-center justify-between
 }
 
 .collection
 {
-    @apply h-full w-[90%] border-4 border-black flex justify-center;
+    @apply h-full border-4 border-black flex justify-center;
+}
+
+.album
+{
+    @apply h-full border-2 border-green-700;
 }
 
 .controls
 {
-    @apply w-[3%] border-2 border-sky-600;
+    @apply border-2 border-sky-600;
 }
