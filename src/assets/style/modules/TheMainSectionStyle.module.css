@@ -11,7 +11,7 @@
 
 .album
 {
-    @apply h-full border-2 border-green-700;
+    @apply h-full border-2 border-orange-200 bg-zinc-800 flex flex-col justify-between items-center;
 }
 
 .controls
