@@ -4,7 +4,6 @@ export default function TheMainSection()
 {
     return (
         <main className={style.main}>
-
         </main>
     );
 }
