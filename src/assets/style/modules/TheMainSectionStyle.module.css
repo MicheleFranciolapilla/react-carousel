@@ -1,5 +1,15 @@
 .main
 {
     margin: 0 auto;
-    @apply w-[96%] h-[80%] border-4 border-yellow-500 relative top-[12vh]
+    @apply w-[96%] border-4 border-yellow-500 relative top-[12vh] flex items-center justify-between
+}
+
+.collection
+{
+    @apply h-full w-[90%] border-4 border-black flex justify-center;
+}
+
+.controls
+{
+    @apply w-[3%] border-2 border-sky-600;
 }
