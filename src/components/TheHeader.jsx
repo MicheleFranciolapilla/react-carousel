@@ -11,4 +11,4 @@ export default function TheHeader()
             <RoundedThumb filePath="./images/dylan-610-400.jpg" styleClasses="h-[90%] aspect-[5/4] rounded-full border-4 border-yellow-200 " />
         </header>
     );
-}
+} 

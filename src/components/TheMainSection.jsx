@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import RoundedThumb from "./RoundedThumb";
 import style from "../assets/style/modules/TheMainSectionStyle.module.css";
 import albums from "../../public/files/titlesWithData.json";
 
@@ -13,8 +14,8 @@ const percentageAndTWClasses =  {
                                                                     TWClass :   "w-[90%]"
                                                                 },
                                     controlsWidth           :   {
-                                                                    perc    :   0.03,
-                                                                    TWClass :   "w-[3%]"
+                                                                    perc    :   0.04,
+                                                                    TWClass :   "w-[4%]"
                                                                 } 
                                 }
 
@@ -43,13 +44,31 @@ export default function TheMainSection()
     function clickOn(index)
     {
         if (index !== currentAlbum)
-            setCurrentAlbum(index);
+            setCurrentAlbum( currentAlbum => currentAlbum = index);
+        console.log("NEWALBUM: ", currentAlbum);
+    }
+
+    function clickOnArrow(isLeft)
+    {
+        let newAlbum = currentAlbum;
+        switch (isLeft)
+        {
+            case true   :   (currentAlbum === 0) ? (newAlbum = totalAlbums - 1) : (newAlbum--);
+                            break;
+            default     :   (currentAlbum === (totalAlbums - 1)) ? (newAlbum = 0) : (newAlbum++);
+        }
+        setCurrentAlbum( newAlbum );
+        console.log("NEWALBUM: ", currentAlbum);
     }
 
     return (
         <main className={`${style.main} ${percentageAndTWClasses.theMainSectionHeight.TWClass}`}>
-            <div id="controlPrev" className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass}`}>
-                <h1>P</h1>
+            <div 
+                id="controlPrev" 
+                className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass} ${(currentAlbum === totalAlbums) && "hidden"}`}
+                onClick={() => clickOnArrow(true)}
+            >
+                <RoundedThumb filePath="./icons/left.jpg" styleClasses="h-[90%] aspect-square rounded-full" />
             </div>
             <div id="albumCollection" className={`${style.collection} ${percentageAndTWClasses.collectionWidth.TWClass}`}>
                 <div id="albumGroup" className={style.group}>
@@ -64,7 +83,7 @@ export default function TheMainSection()
                                                 onClick={() => clickOn(index)}
                                             >
                                                 <div 
-                                                    className={style.sideTextContainer}
+                                                    className={`${style.sideTextContainer} ${style.image} ${(currentAlbum === index) && "hidden"}`}
                                                     style={{width : `${sideAlbumWidthPX}px`}}
                                                 >
                                                     <h2 className={`${sideTextStyle(album.special, false)}`} style={{ fontWeight : 900, textAlign : "center" }}>
@@ -91,8 +110,12 @@ export default function TheMainSection()
                     {/* <img src="./images/albums/DYD-40.jpg" alt="Vignetta nr 4" className={style.album} /> */}
                 </div>
             </div>
-            <div id="controlNext" className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass}`}>
-                <h1>N</h1>
+            <div 
+                id="controlNext" 
+                className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass} ${(currentAlbum === totalAlbums) && "hidden"}`}
+                onClick={() => clickOnArrow(false)}
+            >
+                <RoundedThumb filePath="./icons/right.jpg" styleClasses="h-[90%] aspect-square rounded-full" />            
             </div>
         </main>
     );

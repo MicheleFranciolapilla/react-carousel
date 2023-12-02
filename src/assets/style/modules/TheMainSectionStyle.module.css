@@ -1,18 +1,18 @@
 .main
 {
     margin: 0 auto;
-    @apply w-full relative top-[12vh] flex items-center justify-between
+    @apply w-full relative top-[12vh] flex items-center justify-around
 }
 
 .collection
 {
-    @apply h-full flex justify-center border-2 border-blue-800;
+    @apply h-full flex justify-center border-2;
 }
 
 .group
 {
-    background: radial-gradient(#dbc8b4, #426e82);
-    border: 1px solid black;
+    background: radial-gradient(#eee0d2, #18485e);
+    border: 3px solid black;
     @apply h-full flex justify-center p-5;
 }
 
@@ -21,6 +21,7 @@
     cursor: pointer;
     @apply h-full flex;
 }
+
 .album:hover
 {
     filter: brightness(1.75);
@@ -60,5 +61,11 @@
 
 .controls
 {
-    @apply border-2 border-sky-600;
+    cursor: pointer;
+    @apply flex items-end justify-center p-2 rounded-full;
+}
+
+.controls:hover
+{
+    @apply p-0 border-4 border-blue-800;
 }
