@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import style from "../assets/style/modules/TheMainSectionStyle.module.css";
 import albums from "../../public/files/titlesWithData.json";
 
@@ -19,6 +21,7 @@ const percentageAndTWClasses =  {
 export default function TheMainSection()
 {
     const totalAlbums = albums.length;
+    const [currentAlbum, setCurrentAlbum] = useState(totalAlbums);
 
     const theMainSectionHeightPX = window.innerHeight * percentageAndTWClasses.theMainSectionHeight.perc;
     const albumCollectionWidthPX = window.innerWidth * percentageAndTWClasses.collectionWidth.perc;
@@ -37,6 +40,12 @@ export default function TheMainSection()
         }
     }
 
+    function clickOn(index)
+    {
+        if (index !== currentAlbum)
+            setCurrentAlbum(index);
+    }
+
     return (
         <main className={`${style.main} ${percentageAndTWClasses.theMainSectionHeight.TWClass}`}>
             <div id="controlPrev" className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass}`}>
@@ -45,16 +54,21 @@ export default function TheMainSection()
             <div id="albumCollection" className={`${style.collection} ${percentageAndTWClasses.collectionWidth.TWClass}`}>
                 <div id="albumGroup" className={style.group}>
                     {
-                        albums.map( album =>
+                        albums.map( (album, index) =>
                             {
                                 return  (
                                             <div 
                                                 key={album.nr} 
                                                 className={`${style.album} ${style[specificClass(album.special)]}`} 
-                                                style={{width : `${sideAlbumWidthPX}px`}}
+                                                style={{minWidth : `${sideAlbumWidthPX}px`}}
+                                                onClick={() => clickOn(index)}
                                             >
+                                                <div 
+                                                    className={style.sideTextContainer}
+                                                    style={{width : `${sideAlbumWidthPX}px`}}
+                                                >
                                                     <h2 className={`${sideTextStyle(album.special, false)}`} style={{ fontWeight : 900, textAlign : "center" }}>
-                                                    {/* <h2 className={`${style.textOnSide} ${sideTextStyle(album.special, false)}`}> */}
+                                                        {/* <h2 className={`${style.textOnSide} ${sideTextStyle(album.special, false)}`}> */}
                                                         {/* { album.special ? album.title.toUpperCase() : `DYLAN DOG${'\u00A0\u00A0\u00A0'} ${album.nr}` } */}
                                                         { album.special ? album.nr.replace("P","") : album.nr }
                                                     </h2>
@@ -62,6 +76,14 @@ export default function TheMainSection()
                                                         {/* { album.special ? "DYLAN DOG SPECIAL" : album.title.toUpperCase() } */}
                                                         { album.title.toUpperCase() }
                                                     </h2>
+                                                </div>
+                                                <div className={style.imageContainer}>
+                                                    <img 
+                                                        src={`./images/albums/DYD-${album.nr}.jpg`} 
+                                                        alt={`Copertina dell'album ${album.nr}`} 
+                                                        className={`${style.image} ${(currentAlbum === index) || "hidden"}`}
+                                                    />
+                                                </div>
                                             </div>
                                         );
                             })

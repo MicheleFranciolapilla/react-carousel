@@ -3,3 +3,30 @@ Creare un carousel di immagini e testo ispirandosi allo screenshot fornito. Util
 BONUS:
 Navigazione tramite bullets
 Autoplay
+
+
+// ...
+{
+  albums.map((album, index) => {
+    return (
+      <div key={album.nr} className={`${style.album} ${style[specificClass(album.special)]}`}>
+        <div className={style.sideTextContainer} style={{ width: `${sideAlbumWidthPX}px` }}>
+          <h2 className={`${sideTextStyle(album.special, false)}`} style={{ fontWeight: 900, textAlign: "center" }}>
+            {/* Your text */}
+          </h2>
+          <h2 className={`${style.textOnSide} ${sideTextStyle(album.special, true)}`}>
+            {/* Your text */}
+          </h2>
+        </div>
+        <div className={style.imageContainer}>
+          <img
+            src={`./images/albums/DYD-${album.nr}.jpg`}
+            alt={`Copertina dell'album ${album.nr}`}
+            className={`${style.image} ${(currentAlbum === index) || "hidden"}`}
+          />
+        </div>
+      </div>
+    );
+  })
+}
+// ...

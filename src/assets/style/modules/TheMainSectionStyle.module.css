@@ -6,17 +6,39 @@
 
 .collection
 {
-    @apply h-full flex justify-center;
+    @apply h-full flex justify-center border-2 border-blue-800;
 }
 
 .group
 {
-    @apply h-full flex justify-center p-5 bg-slate-600;
+    background: radial-gradient(#dbc8b4, #426e82);
+    border: 1px solid black;
+    @apply h-full flex justify-center p-5;
 }
 
 .album
 {
-    @apply h-full flex flex-col justify-between border-2 border-orange-200 pb-5;
+    cursor: pointer;
+    @apply h-full flex;
+}
+.album:hover
+{
+    filter: brightness(1.75);
+}
+
+.sideTextContainer
+{
+    @apply h-full w-full flex flex-col justify-between border-2 border-orange-200 pb-5;
+}
+
+.imageContainer
+{
+    @apply h-full relative
+}
+
+.image
+{
+    @apply h-full
 }
 
 .regular
