@@ -1,17 +1,39 @@
 .main
 {
     margin: 0 auto;
-    @apply w-full border-4 border-yellow-500 relative top-[12vh] flex items-center justify-between
+    @apply w-full relative top-[12vh] flex items-center justify-between
 }
 
 .collection
 {
-    @apply h-full border-4 border-black flex justify-center;
+    @apply h-full flex justify-center;
+}
+
+.group
+{
+    @apply h-full flex justify-center p-5 bg-slate-600;
 }
 
 .album
 {
-    @apply h-full border-2 border-orange-200 bg-zinc-800 flex flex-col justify-between items-center;
+    @apply h-full flex flex-col justify-between border-2 border-orange-200 pb-5;
+}
+
+.regular
+{
+    @apply bg-zinc-800
+}
+
+.special
+{
+    @apply bg-gray-200
+}
+
+.textOnSide
+{
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    font-weight: 900;
 }
 
 .controls

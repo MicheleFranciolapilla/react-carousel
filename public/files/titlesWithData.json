@@ -1,6 +1,7 @@
 [
     {
         "nr": 1,
+        "special": false, 
         "title": "l'alba dei morti viventi",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -9,6 +10,7 @@
     },
     {
         "nr": 5,
+        "special": false, 
         "title": "gli uccisori",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -17,6 +19,7 @@
     },
     {
         "nr": 6,
+        "special": false, 
         "title": "la bellezza del demonio",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -25,6 +28,7 @@
     },
     {
         "nr": 7,
+        "special": false, 
         "title": "la zona del crepuscolo",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -33,6 +37,7 @@
     },
     {
         "nr": 10,
+        "special": false, 
         "title": "attraverso lo specchio",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -41,6 +46,7 @@
     },
     {
         "nr": 16,
+        "special": false, 
         "title": "il castello della paura",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -49,6 +55,7 @@
     },
     {
         "nr": 17,
+        "special": false, 
         "title": "la dama in nero",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -57,6 +64,7 @@
     },
     {
         "nr": 25,
+        "special": false, 
         "title": "morgana",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -65,6 +73,7 @@
     },
     {
         "nr": 26,
+        "special": false, 
         "title": "dopo mezzanotte",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -73,6 +82,7 @@
     },
     {
         "nr": 34,
+        "special": false, 
         "title": "il buio",
         "soggetto": "claudio chiaverotti",
         "sceneggiatura": ["claudio chiaverotti"],
@@ -81,6 +91,7 @@
     },
     {
         "nr": 39,
+        "special": false, 
         "title": "il signore del silenzio",
         "soggetto": "giuseppe ferrandino",
         "sceneggiatura": ["giuseppe ferrandino"],
@@ -89,6 +100,7 @@
     },
     {
         "nr": 40,
+        "special": false, 
         "title": "accadde domani",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -97,6 +109,7 @@
     },
     {
         "nr": 43,
+        "special": false, 
         "title": "storia di nessuno",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -105,6 +118,7 @@
     },
     {
         "nr": 45,
+        "special": false, 
         "title": "goblin",
         "soggetto": "claudio chiaverotti",
         "sceneggiatura": ["claudio chiaverotti"],
@@ -113,6 +127,7 @@
     },
     {
         "nr": 57,
+        "special": false, 
         "title": "ritorno al crepuscolo",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -121,6 +136,7 @@
     },
     {
         "nr": 66,
+        "special": false, 
         "title": "partita con la morte",
         "soggetto": "claudio chiaverotti",
         "sceneggiatura": ["claudio chiaverotti"],
@@ -129,6 +145,7 @@
     },
     {
         "nr": 74,
+        "special": false, 
         "title": "il lungo addio",
         "soggetto": "mauro marcheselli",
         "sceneggiatura": ["tiziano sclavi"],
@@ -137,6 +154,7 @@
     },
     {
         "nr": 81,
+        "special": false, 
         "title": "johnny freak",
         "soggetto": "mauro marcheselli",
         "sceneggiatura": ["tiziano sclavi"],
@@ -145,6 +163,7 @@
     },
     {
         "nr": 82,
+        "special": false, 
         "title": "lontano dalla luce",
         "soggetto": "claudio chiaverotti",
         "sceneggiatura": ["claudio chiaverotti"],
@@ -153,6 +172,7 @@
     },
     {
         "nr": 84,
+        "special": false, 
         "title": "zed",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -161,6 +181,7 @@
     },
     {
         "nr": 100,
+        "special": false, 
         "title": "la storia di dylan dog",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -169,6 +190,7 @@
     },
     {
         "nr": "SP-3",
+        "special": true, 
         "title": "orrore nero",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi", "luigi mignacco"],
@@ -177,6 +199,7 @@
     },
     {
         "nr": "SP-4",
+        "special": true, 
         "title": "mefistofele",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -185,6 +208,7 @@
     },
     {
         "nr": "SP-5",
+        "special": true, 
         "title": "la casa degli uomini perduti",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -193,6 +217,7 @@
     },
     {
         "nr": "SP-6",
+        "special": true, 
         "title": "sette anime dannate",
         "soggetto": "tiziano sclavi",
         "sceneggiatura": ["tiziano sclavi"],
@@ -201,6 +226,7 @@
     },
     {
         "nr": "SP-8",
+        "special": true, 
         "title": "labirinti di paura",
         "soggetto": "claudio chiaverotti",
         "sceneggiatura": ["claudio chiaverotti"],
