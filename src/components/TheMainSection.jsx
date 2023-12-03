@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import RoundedThumb from "./RoundedThumb";
+import InfoCloud from "./infoCloud";
 import style from "../assets/style/modules/TheMainSectionStyle.module.css";
 import albums from "../../public/files/titlesWithData.json";
 
@@ -70,6 +71,20 @@ export default function TheMainSection()
         console.log("NEWALBUM: ", currentAlbum);
     }
 
+    function setCloudsSideClass(index)
+    {
+        const percentage = 0.25;
+        const sideArea = Math.ceil(totalAlbums * percentage);
+        if (index <= sideArea)
+            return {right : "-100%"};
+        if (index >= totalAlbums - sideArea)
+            return {left : "-100%"};
+        if (Math.random() < 0.5)
+            return {right : "-100%"};
+        else
+            return {left : "-100%"};
+    }
+
     return (
         <main className={`${style.main} ${percentageAndTWClasses.theMainSectionHeight.TWClass}`}>
             <div 
@@ -112,18 +127,25 @@ export default function TheMainSection()
                                                         { album.title.toUpperCase() }
                                                     </h2>
                                                 </div>
-                                                <div className={style.imageContainer}>
+                                                <div 
+                                                    className={style.imageContainer}
+                                                >
                                                     <img 
                                                         src={`./images/albums/DYD-${album.nr}.jpg`} 
                                                         alt={`Copertina dell'album ${album.nr}`} 
                                                         className={`${style.image} ${(currentAlbum === index) || "hidden"}`}
                                                     />
+                                                    <div 
+                                                        className={style.cloudsContainer}
+                                                        style={setCloudsSideClass(index)}
+                                                    >
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         );
                             })
                     }
-                    {/* <img src="./images/albums/DYD-40.jpg" alt="Vignetta nr 4" className={style.album} /> */}
                 </div>
             </div>
             <div 

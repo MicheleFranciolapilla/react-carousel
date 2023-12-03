@@ -6,7 +6,14 @@
 
 .closeBook
 {
-    @apply absolute w-[5%] aspect-square top-3 left-5 border-2 border-blue-800 p-0 rounded-full;
+    filter: brightness(0.5);
+    @apply absolute w-[3%] aspect-square top-3 left-5 border-2 border-blue-800 p-0 rounded-full;
+}
+
+.closeBook:hover
+{
+    filter: none;
+    @apply w-[4%];
 }
 
 .collection
@@ -39,12 +46,40 @@
 
 .imageContainer
 {
-    @apply h-full
+    @apply h-full relative;
+}
+
+.imageContainer:hover .cloudsContainer
+{
+    display: flex;
+    pointer-events: none;
+}
+
+
+.cloudsContainer
+{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid blue;
+    display: none;
+}
+
+.cloudsOnLeft
+{
+    left: -100%;
+}
+
+.cloudsOnRight
+{
+    right: -100%;
 }
 
 .image
 {
-    @apply h-full
+    @apply h-full;
 }
 
 .regular
