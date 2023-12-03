@@ -34,9 +34,6 @@ export default function TheMainSection()
     const sideAlbumWidthPX = (albumCollectionWidthPX - theMainSectionHeightPX) / (totalAlbums - 1);
     const specificClass = (isSpecial) => isSpecial ? "special" : "regular";
 
-    console.log("ALTEZZA MAIN: ", theMainSectionHeightPX);
-    console.log("LARGHEZZA ALBUM: ", sideAlbumWidthPX);
-
     function sideTextStyle(isSpecial, lower)
     {
         switch (isSpecial)
