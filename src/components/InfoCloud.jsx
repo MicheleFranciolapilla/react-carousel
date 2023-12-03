@@ -5,15 +5,15 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
     return (
         <>
             <div className={`${style.mainCloud} ${bgColor}`}>
-                <h2 className={headingColor}>{heading}</h2>
+                <span className={headingColor}>{heading}</span>
                     { 
                         info.map( infoItem => 
-                            <h5 
+                            <span 
                                 key={`${Math.random() * 1000}-${infoItem}`} 
                                 className={infoColor}
                             >
                                     {infoItem}
-                            </h5>) 
+                            </span>) 
                     }
             </div>
         </>

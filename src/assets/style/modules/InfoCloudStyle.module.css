@@ -1,4 +1,14 @@
 .mainCloud
 {
-    @apply rounded-full px-6 py-3;
+    @apply rounded-full flex flex-col px-6 py-3 border-2 border-zinc-500;
 }
+
+.mainCloud > span
+{
+    @apply text-sm;
+}
+
+.mainCloud > span:first-child
+{
+    @apply text-xs;
+};
