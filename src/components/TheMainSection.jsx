@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import RoundedThumb from "./RoundedThumb";
-import InfoCloud from "./infoCloud";
+import InfoCloud from "./InfoCloud";
 import style from "../assets/style/modules/TheMainSectionStyle.module.css";
 import albums from "../../public/files/titlesWithData.json";
 
@@ -76,13 +76,13 @@ export default function TheMainSection()
         const percentage = 0.25;
         const sideArea = Math.ceil(totalAlbums * percentage);
         if (index <= sideArea)
-            return {right : "-100%"};
+            return {right : "-100%", alignItems : "start"};
         if (index >= totalAlbums - sideArea)
-            return {left : "-100%"};
+            return {left : "-100%", alignItems : "end"};
         if (Math.random() < 0.5)
-            return {right : "-100%"};
+            return {right : "-100%", alignItems : "start"};
         else
-            return {left : "-100%"};
+            return {left : "-100%", alignItems : "end"};
     }
 
     return (
@@ -139,7 +139,41 @@ export default function TheMainSection()
                                                         className={style.cloudsContainer}
                                                         style={setCloudsSideClass(index)}
                                                     >
-
+                                                        <InfoCloud 
+                                                            heading="DATA DI USCITA:" 
+                                                            info={[album.uscita]} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
+                                                        <InfoCloud 
+                                                            heading="SOGGETTO:" 
+                                                            info={[album.soggetto]} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
+                                                        <InfoCloud 
+                                                            heading="SCENEGGIATURA:" 
+                                                            info={album.sceneggiatura} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
+                                                        <InfoCloud 
+                                                            heading="DISEGNI:" 
+                                                            info={album.disegni} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
+                                                        <InfoCloud 
+                                                            heading="COPERTINA:" 
+                                                            info={[album.copertina]} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>
