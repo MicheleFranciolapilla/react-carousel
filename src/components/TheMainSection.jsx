@@ -70,7 +70,7 @@ export default function TheMainSection()
 
     function setCloudsSideClass(index)
     {
-        const percentage = 0.25;
+        const percentage = 0.2;
         const sideArea = Math.ceil(totalAlbums * percentage);
         if (index <= sideArea)
             return {right : "-100%", alignItems : "start"};
