@@ -78,12 +78,12 @@ export default function TheMainSection()
                                 return  (
                                             <div 
                                                 key={album.nr} 
-                                                className={`${style.album} ${style[specificClass(album.special)]}`} 
+                                                className={style.album} 
                                                 style={{minWidth : `${sideAlbumWidthPX}px`}}
                                                 onClick={() => clickOn(index)}
                                             >
                                                 <div 
-                                                    className={`${style.sideTextContainer} ${style.image} ${(currentAlbum === index) && "hidden"}`}
+                                                    className={`${style.sideTextContainer} ${style.image} ${(currentAlbum === index) && "hidden"}  ${style[specificClass(album.special)]}`}
                                                     style={{width : `${sideAlbumWidthPX}px`}}
                                                 >
                                                     <h2 className={`${sideTextStyle(album.special, false)}`} style={{ fontWeight : 900, textAlign : "center" }}>

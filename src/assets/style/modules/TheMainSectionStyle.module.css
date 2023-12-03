@@ -22,19 +22,19 @@
     @apply h-full flex;
 }
 
-.album:hover
-{
-    filter: brightness(1.75);
-}
-
 .sideTextContainer
 {
     @apply h-full w-full flex flex-col justify-between border-2 border-orange-200 pb-5;
 }
 
+.sideTextContainer:hover
+{
+    filter: brightness(1.75);
+}
+
 .imageContainer
 {
-    @apply h-full relative
+    @apply h-full
 }
 
 .image
