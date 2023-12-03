@@ -13,6 +13,10 @@ const percentageAndTWClasses =  {
                                                                     perc    :   0.9,
                                                                     TWClass :   "w-[90%]"
                                                                 },
+                                    collectionHeight        :   {
+                                                                    perc    :   0.9,
+                                                                    TWClass :   "w-[90%]"
+                                                                },
                                     controlsWidth           :   {
                                                                     perc    :   0.04,
                                                                     TWClass :   "w-[4%]"
@@ -41,6 +45,11 @@ export default function TheMainSection()
         }
     }
 
+    function closeBook()
+    {
+        setCurrentAlbum(totalAlbums);
+    }
+
     function clickOn(index)
     {
         if (index !== currentAlbum)
@@ -63,6 +72,13 @@ export default function TheMainSection()
 
     return (
         <main className={`${style.main} ${percentageAndTWClasses.theMainSectionHeight.TWClass}`}>
+            <div 
+                id="closeBook" 
+                className={`${style.closeBook} ${(currentAlbum === totalAlbums) && "hidden"}`}
+                onClick={closeBook}
+            >
+                <RoundedThumb filePath="./icons/close-book.png" styleClasses="h-full aspect-square rounded-full cursor-pointer" />
+            </div>
             <div 
                 id="controlPrev" 
                 className={`${style.controls} ${percentageAndTWClasses.controlsWidth.TWClass} ${(currentAlbum === totalAlbums) && "hidden"}`}

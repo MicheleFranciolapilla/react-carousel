@@ -1,7 +1,12 @@
 .main
 {
     margin: 0 auto;
-    @apply w-full relative top-[12vh] flex items-center justify-around
+    @apply w-full relative top-[12vh] flex items-center justify-around;
+}
+
+.closeBook
+{
+    @apply absolute w-[5%] aspect-square top-3 left-5 border-2 border-blue-800 p-0 rounded-full;
 }
 
 .collection
