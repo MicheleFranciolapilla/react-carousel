@@ -16,7 +16,7 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
     {
         const findItemToVirtualize = setInterval( () =>
             {
-                const itemToVirtualize = document.getElementById(`${cloudIndex}-${heading}-${info[0]}`);
+                const itemToVirtualize = document.getElementById(`${cloudIndex}-${heading}-${info[0]}-VIRTUAL`);
                 console.log("ITEM TO FIND: ", itemToVirtualize);
                 if (itemToVirtualize)
                 {
@@ -90,6 +90,19 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
             />
             { appendOnVirtual() }
             { setBubblesCenters() }
+
+            <div id={`${cloudIndex}-${heading}-${info[0]}`} className={`${style.mainCloud} ${bgColor} relative`}>
+            <span className={headingColor}>{heading}</span>
+            { 
+                info.map( infoItem => 
+                    <span 
+                        key={`${cloudIndex}-${heading}-${infoItem}`} 
+                        className={infoColor}
+                    >
+                        {infoItem}
+                    </span>) 
+            }
+        </div>
         </>
 
     )
