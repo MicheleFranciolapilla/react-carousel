@@ -1,6 +1,6 @@
 import style from "../assets/style/modules/InfoCloudStyle.module.css";
 
-export default function InfoCloud({heading, info, headingColor, infoColor, bgColor})
+export default function InfoCloud({heading, info, headingColor, infoColor, bgColor, cloudIndex})
 {
     return (
         <>

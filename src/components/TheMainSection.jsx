@@ -142,6 +142,7 @@ export default function TheMainSection()
                                                             headingColor="text-blue-500"
                                                             infoColor="text-black"
                                                             bgColor="bg-white"
+                                                            cloudIndex={index}
                                                         />
                                                         <InfoCloud 
                                                             heading="SOGGETTO:" 
@@ -149,6 +150,7 @@ export default function TheMainSection()
                                                             headingColor="text-blue-500"
                                                             infoColor="text-black"
                                                             bgColor="bg-white"
+                                                            cloudIndex={index}
                                                         />
                                                         <InfoCloud 
                                                             heading="SCENEGGIATURA:" 
@@ -156,6 +158,7 @@ export default function TheMainSection()
                                                             headingColor="text-blue-500"
                                                             infoColor="text-black"
                                                             bgColor="bg-white"
+                                                            cloudIndex={index}
                                                         />
                                                         <InfoCloud 
                                                             heading="DISEGNI:" 
@@ -163,6 +166,7 @@ export default function TheMainSection()
                                                             headingColor="text-blue-500"
                                                             infoColor="text-black"
                                                             bgColor="bg-white"
+                                                            cloudIndex={index}
                                                         />
                                                         <InfoCloud 
                                                             heading="COPERTINA:" 
@@ -170,6 +174,7 @@ export default function TheMainSection()
                                                             headingColor="text-blue-500"
                                                             infoColor="text-black"
                                                             bgColor="bg-white"
+                                                            cloudIndex={index}
                                                         />
                                                     </div>
                                                 </div>
