@@ -1,12 +1,11 @@
 import { useState } from "react";
 
+import style from "./assets/style/modules/SwitchCollectionStyle.module.css";
+
 import TheBackgroundImage from "./components/TheBackgroundImage";
 import TheHeader from "./components/TheHeader";
 import TheMainSection from "./components/TheMainSection";
 import TheFooter from "./components/TheFooter";
-import RoundedThumb from "./components/RoundedThumb";
-
-
 
 function App() 
 {
@@ -14,17 +13,18 @@ function App()
 
   function switchValue()
   {
-    console.log("FUNZIONE INVOCATA");
+    console.log("GOING TO SWITCH")
     SetShowCollection( (currentValue) => currentValue = !currentValue);
   }
 
 function SwitchCollection({showCollectionValue})
 {
-  const imgToShow = showCollectionValue ? "close-collection.jpg" : "open-collection.jpg";
-  const TWImgPos  = showCollectionValue ? "right-3 top-3" : "left-10 top-10";
+  const svgToShow = showCollectionValue ? "close-collection.svg" : "open-collection.svg";
+  const TWImgPos  = showCollectionValue ? "border-4 right-3 top-24 w-10 hover:w-14" : "border-8 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-44 hover:w-52";
   return (
-    <img src={`./icons/${imgToShow}`} className="relative z-10" onClick={() => switchValue()} />
-    // <RoundedThumb filePath={`./icons/${imgToShow}`} styleClasses={`absolute aspect-square rounded-full p-8 cursor-pointer ${TWImgPos}`} onClick={clicked} />
+    <div className={`${TWImgPos} ${style.imgContainer}`}>
+        <img src={`./icons/${svgToShow}`} className={`w-[75%]`} onClick={() => switchValue()} />
+    </div>
   );
 }
 
