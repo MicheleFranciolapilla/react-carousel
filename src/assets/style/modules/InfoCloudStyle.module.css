@@ -12,3 +12,8 @@
 {
     @apply text-xs;
 };
+
+.bubble
+{
+    @apply absolute rounded-full;
+}
