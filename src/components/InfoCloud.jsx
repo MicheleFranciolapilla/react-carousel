@@ -11,7 +11,7 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
     let rightBubbles = [];
     let lowerBubbles = [];
     let leftBubbles = [];
-    const maxRadius = 13;
+    const maxRadius = 28;
     const [appendFinished, setAppendFinished] = useState(false);
 
     function appendOnVirtual()
@@ -31,7 +31,7 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
                     console.log("WIDTH: ", itemWidth);
                     console.log("HEIGHT: ", itemHeight);
                     setBubblesCenters();
-                    setAppendFinished( (value) => value = true);
+                    setAppendFinished(true);
                 }
             }, 200);
     }
@@ -46,7 +46,7 @@ export default function InfoCloud({heading, info, headingColor, infoColor, bgCol
         {
             console.log("BEGIN: ", beginU);
             console.log("END: ", endU);
-            beginU += Math.ceil(Math.random() * (maxRadius * 2 / 3)); 
+            beginU += Math.ceil(Math.random() * maxRadius); 
             if (beginU < endU)
             {
                 console.log("NUOVO BEGIN: ", beginU);
