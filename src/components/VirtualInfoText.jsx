@@ -1,9 +1,9 @@
 import style from "../assets/style/modules/InfoCloudStyle.module.css";
 
-export default function HiddenInfoText({heading, info, headingColor, infoColor, index})
+export default function VirtualInfoText({heading, info, headingColor, infoColor, index})
 {
     return (
-        <div id={`${index}-${heading}-${info[0]}`} className={style.mainCloud} style={{opacity:0.9}}>
+        <div id={`${index}-${heading}-${info[0]}`} className={`${style.mainCloud} absolute`} style={{top:-1000000}}>
             <span className={headingColor}>{heading}</span>
             { 
                 info.map( infoItem => 

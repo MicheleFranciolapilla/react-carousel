@@ -110,6 +110,8 @@ export default function TheMainSection()
                                                 style={{minWidth : `${sideAlbumWidthPX}px`}}
                                                 onClick={() => clickOn(index)}
                                             >
+                                                <div id={`VIRTUAL-${index}`}>
+                                                </div>
                                                 <div 
                                                     className={`${style.sideTextContainer} ${style.image} ${(currentAlbum === index) && "hidden"}  ${style[specificClass(album.special)]}`}
                                                     style={{width : `${sideAlbumWidthPX}px`}}
