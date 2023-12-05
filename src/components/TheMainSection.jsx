@@ -137,6 +137,13 @@ export default function TheMainSection()
                                                         style={setCloudsSideClass(index)}
                                                     >
                                                         <InfoCloud 
+                                                            heading="DYLAN DOG NUMERO:" 
+                                                            info={[album.nr]} 
+                                                            headingColor="text-blue-500"
+                                                            infoColor="text-black"
+                                                            bgColor="bg-white"
+                                                        />
+                                                        <InfoCloud 
                                                             heading="DATA DI USCITA:" 
                                                             info={[album.uscita]} 
                                                             headingColor="text-blue-500"
